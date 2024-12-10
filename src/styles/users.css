@@ -1,0 +1,111 @@
+.container{
+    margin: 0 auto;
+    width: 850px;
+}
+
+.header{
+    padding: 61px 0;
+    display: flex;
+    gap: 365px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user__profile-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 2px solid var(--color-2);
+}
+
+.user__profile-name{
+    font-size: var(--font-3);
+    font-weight: var(--weight-4);
+    color: var(--color-9);
+}
+
+.header__change-user{
+    padding: 14px 25px;
+    background-color: var(--color-5) ;
+    color: var(--color-9);
+    font-size: var(--font-1);
+    font-weight: var(--weight-3);
+    border: transparent;
+    border-radius: var(--radius-1);
+}
+
+.main-repository-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-repository-list__repository-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.repository-list__repository{
+    padding: 40px 27px;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    justify-content: center;
+    justify-content: space-between;
+    color: var(--color-9);
+    width: 41%;
+    border-radius: var(--radius-1);
+    border: 2px solid #FFFFFF1A;
+    height: 200px;
+}
+
+.repository-list__repository:hover{
+    background-color: var(--color-3);
+    border: 2px solid var(--color-9);
+    transition: 0.5s;
+}
+
+.repository__title{
+    font-size: var(--font-2);
+    font-weight: var(--weight-2);
+    white-space: nowrap;        
+    overflow: hidden;          
+    text-overflow: ellipsis; 
+}
+
+.repository__description{
+    font-size: var(--font-1);
+    font-weight: var(--weight-1);
+    line-height: 21px;
+    color: #FFFFFF99;
+    display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.repository__view-repository{
+    width: 93px;
+    padding: 5.5px 0;
+    background-color: transparent;
+    border: 1px solid var(--color-9);
+    border-radius: var(--radius-2);
+    color: var(--color-9);
+}
+
+.repository__view-repository:hover{
+    background-color: var(--color-1);
+    border: 1px solid var(--color-1);
+    transition: 0.5s;
+}
